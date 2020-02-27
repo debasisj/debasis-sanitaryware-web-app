@@ -1,0 +1,56 @@
+﻿@{ 
+    ViewBag.Title = "Contact";
+}
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+    <h2 class="text-center">Contact Us</h2>
+    <hr />
+    <div class="row">
+        <div class="col-sm-5">
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span>Plot 94, Temple Road <br />
+             Khandagiri<br />
+            Bhubaneswar, Odisa - 751030</p>
+            <p><span class="fa fa-phone"></span> <a href="tel:+91 6742384623">+91 6742384623</a></p>
+            <p><span class="fa fa-mobile"></span> <a href="tel:+91 9437185788">+91 9437185788</a></p>
+            <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:deb.jagadev@gmail.com">deb.jagadev@gmail.com</a></p>
+        </div>
+        <div class="col-sm-7 slideanim">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="mobile" name="mobile" placeholder="mobile" type="number" required>
+                </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button class="btn btn-default pull-right" type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Google Maps -->
+<div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+function myMap() {
+    var myCenter = new google.maps.LatLng(20.261556, 85.786266);
+var mapProp = {center:myCenter, zoom:16, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXQxmaTJb3S6qcmNDG4o6g8uAAJNMhHEY&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->

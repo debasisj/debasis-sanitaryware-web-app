@@ -1,0 +1,102 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+
+            <div class="jumbotron text-center firstSlide" role="option">
+
+                <h1>Debasis Sanitary Syndicate</h1>
+                <p>
+                    We provide end to end service for your entire sanitaryware, plumbing needs.<br />
+                    All our produvcts and services comes with our genuine warrenty and aftersale service
+
+                </p>
+                <input type="button" id="btnFindmoreAbout" class="btn btn-primary" value="Find More" onclick="location.href='@Url.Action("About", "Home" )'" />
+
+            </div>
+        </div>
+        <div class="item">
+
+            <div class=" jumbotron text-center secondSlide" role="option">
+                <h1>Premium Hindware Dealer</h1>
+                <p>
+                    We are <b style="color:red">HindwareStudio</b> Dealer
+
+                </p>
+                <input type="button" class="btn btn-primary" value="Find More" onclick="location.href='@Url.Action("Hindware", "Products" )'" />
+            </div>
+        </div>
+        <div class="item">
+
+            <div class=" jumbotron text-center thirdSlide" role="option">
+                <h1>Authorized Oriplast Dealer</h1>
+                <p style="color:black">
+                    We are <b style="color:red">premium Oriplast</b> dealer
+
+                </p>
+                <button class="btn btn-success">Find out more</button>
+            </div>
+        </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<div class="container-fluid text-center">
+    <div class="row">
+        <div class="column">
+            <h2 class="PageH2Style">Who we are?</h2>
+            <p class="fa fa-institution fa-5x PageH2Style"></p>
+             <p style="font-family:'Lucida Sans'">We are a familiy operated business since 2001. We sell only genuine products, honest price, provide comprehsive after sales warranty and services.</p>
+            <button class="btn btn-group">Find More</button>
+        </div>
+        <div class="column">
+            <h2 class="PageH2Style">What we do?</h2>
+            <p class="fa fa-bathtub fa-5x PageH2Style"></p>
+            <p style="font-family:'Lucida Sans'">Sales, Service of Sanitaryware, Plumbing Service and Consulting. We are authorized dealer for Hindware, OriPlast and other leading brands. </p>
+            <button class="btn btn-group">Find More</button>
+
+        </div>
+        <div class="column">
+            <h2 class="PageH2Style">Special Services</h2>
+            <p class="fa fa-wrench fa-5x PageH2Style"></p>
+            <p style="font-family:'Lucida Sans'">We offer end to end service for bore well drilling, pipe and motor installation. We will arrange expertise and plumber services to get the job done.</p>
+            <button class="btn btn-group">Find More</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+@*<div class="jumbotron text-center">
+    <h1>Debasis Sanitary Syndicate</h1>
+    <p>
+        We provide end to end service for your entire sanitaryware, plumbing needs.<br />
+        All our produvcts and services comes with our genuine warrenty and aftersale service
+
+    </p>
+    <button class="btn btn-primary">Find out more</button>
+
+</div>*@
